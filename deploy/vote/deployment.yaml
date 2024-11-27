@@ -13,7 +13,7 @@ spec:
       app: vote
   strategy:
     rollingUpdate:
-      type: "Recreate"
+      type: Recreate
   template:
     metadata:
       creationTimestamp: null
@@ -22,7 +22,7 @@ spec:
         tier: front
     spec:
       containers:
-      - image: schoolofdevops/vote:xxx
+      - image: schoolofdevops/vote:v1
         name: vote
         resources: {}
 status: {}
