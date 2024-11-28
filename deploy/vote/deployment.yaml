@@ -11,9 +11,6 @@ spec:
   selector:
     matchLabels:
       app: vote
-  strategy:
-    rollingUpdate:
-      type: "Recreate"
   template:
     metadata:
       creationTimestamp: null
