@@ -20,3 +20,8 @@ commonLabels:
   env: staging
 commonAnnotations:
   supported-by: "sre@example.com"
+configMapGenerator:
+- name: vote
+  literals:
+    -  OPTION_A=good
+    -  OPTION_B=bad

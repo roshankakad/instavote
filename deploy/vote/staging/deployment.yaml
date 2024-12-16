@@ -13,3 +13,7 @@ spec:
       containers:
         - image: schoolofdevops/vote:v2
           name: vote
+          envFrom:
+            - configMapRef:
+                name: vote
+                optional: true
