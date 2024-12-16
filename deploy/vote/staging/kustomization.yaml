@@ -7,3 +7,10 @@ patchesStrategicMerge:
 - service.yaml
 
 namespace: instavote
+images:
+- name: schoolofdevops/vote
+  newTag: v5
+
+replicas:
+- name: vote
+  count: 10
